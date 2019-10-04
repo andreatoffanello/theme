@@ -1,0 +1,44 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-gap: 16px;
+
+	div {
+		height: auto;
+		background: $main;
+		text-align: center;
+		opacity:.5;
+
+		span {
+			color: $white;
+		}
+	}
+}
+
+.col-1 {
+	grid-column: span 1;
+}
+
+.col-2 {
+	grid-column: span 2;
+}
+
+.col-3 {
+	grid-column: span 3;
+}
+
+.col-4 {
+	grid-column: span 4;
+}
+
+.col-5 {
+	grid-column: span 5;
+}
+
+.col-6 {
+	grid-column: span 6;
+}
+
+.col-7 {
+	grid-column: span 7;
+}
