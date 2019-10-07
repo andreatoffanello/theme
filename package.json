@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "ajv": "^6.10.2",
     "autoprefixer": "^9.6.1",
     "beeper": "^2.0.0",
     "gulp": "^4.0.2",
