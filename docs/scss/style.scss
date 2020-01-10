@@ -26,3 +26,16 @@ body {
 .portlet-dockbar {
 	position: absolute;
 }
+
+.aui .navbar .nav li a {
+	color: #ffffff;
+}
+
+.navbar-inner {
+	display: inline-block;
+}
+
+li.lfr-nav-item {
+	float: none;
+	display: block;
+}
