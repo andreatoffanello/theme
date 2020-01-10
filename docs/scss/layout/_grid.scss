@@ -48,9 +48,9 @@
 .page {
 	display: grid;
 	grid-template-columns: auto 1fr;
+	grid-template-rows: calc(100vh - 80px);
 	grid-gap: 16px;
 	margin: 16px;
-	min-height: calc(100vh - 80px);
 
 	.side {
 
@@ -142,6 +142,11 @@
 .grid_box {
 
 	background: $white;
+
+	.portlet {
+		height: 100%;
+		overflow: scroll;
+	}
 
 	.box_head {
 		display: grid;
@@ -260,7 +265,7 @@ i[data-tab-close]{
 		&:after {
 			opacity: .2;
 		}
-		
+
 	}
 }
 
@@ -274,7 +279,7 @@ i[data-tab-close]{
 	display: grid;
 	height: 100%;
 	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: auto auto;
+	grid-template-rows: repeat(2, calc(50% - 8px));
 	grid-gap: 16px;
 
 	.t12_l12 {
@@ -432,35 +437,11 @@ i[data-tab-close]{
 		}
 
 		&:nth-child(even){
-			
+
 		}
-	} 
+	}
 
 	&.col2 {
 		grid-template-columns: 1fr 1fr;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

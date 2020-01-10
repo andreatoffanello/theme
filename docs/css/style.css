@@ -105,9 +105,9 @@ img {
 .page {
   display: grid;
   grid-template-columns: auto 1fr;
+  grid-template-rows: calc(100vh - 80px);
   grid-gap: 16px;
   margin: 16px;
-  min-height: calc(100vh - 80px);
 }
 
 .page .side .side_menu {
@@ -193,6 +193,11 @@ img {
 
 .grid_box {
   background: #ffffff;
+}
+
+.grid_box .portlet {
+  height: 100%;
+  overflow: scroll;
 }
 
 .grid_box .box_head {
@@ -321,7 +326,7 @@ i[data-tab-close]:hover:after {
   display: grid;
   height: 100%;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: repeat(2, calc(50% - 8px));
   grid-gap: 16px;
 }
 
