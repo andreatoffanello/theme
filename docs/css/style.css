@@ -195,7 +195,7 @@ img {
   background: #ffffff;
 }
 
-.grid_box .portlet {
+.grid_box .portlet_wrap {
   height: 100%;
   overflow-y: auto;
 }
