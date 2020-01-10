@@ -639,11 +639,11 @@ body {
   color: #ffffff;
 }
 
-.navbar-inner {
+.aui .navbar-inner {
   display: inline-block;
 }
 
-li.lfr-nav-item {
+.aui li.lfr-nav-item {
   float: none;
   display: block;
 }

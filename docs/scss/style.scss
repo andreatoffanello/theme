@@ -27,15 +27,19 @@ body {
 	position: absolute;
 }
 
-.aui .navbar .nav li a {
-	color: #ffffff;
-}
+.aui {
 
-.navbar-inner {
-	display: inline-block;
-}
+	.navbar .nav li a {
+		color: #ffffff;
+	}
 
-li.lfr-nav-item {
-	float: none;
-	display: block;
+	.navbar-inner {
+		display: inline-block;
+	}
+
+	li.lfr-nav-item {
+		float: none;
+		display: block;
+	}
+
 }
