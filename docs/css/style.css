@@ -630,3 +630,7 @@ body {
   background: #fafafa;
   font-family: "Source Sans Pro", sans-serif;
 }
+
+.portlet-dockbar {
+  position: absolute;
+}

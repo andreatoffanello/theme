@@ -1,9 +1,9 @@
 @import "colors";
 @import "fonts";
-@import "reset"; 
+@import "reset";
 @import "helpers";
 
-@import "layout/grid"; 
+@import "layout/grid";
 
 @import "navigation/navigation";
 @import "navigation/side";
@@ -19,4 +19,10 @@
 body {
 	background: $light;
 	font-family: $font;
+}
+
+
+// FIX LIFERAY
+.portlet-dockbar {
+	position: absolute;
 }
