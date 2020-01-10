@@ -197,7 +197,7 @@ img {
 
 .grid_box .portlet {
   height: 100%;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .grid_box .box_head {
