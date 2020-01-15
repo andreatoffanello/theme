@@ -652,7 +652,7 @@ body {
 }
 
 .aui a {
-  color: inherit;
+  color: inherit !important;
 }
 
 .aui a:hover {
