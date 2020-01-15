@@ -142,6 +142,7 @@ img {
   -webkit-transition-delay: .3s;
        -o-transition-delay: .3s;
           transition-delay: .3s;
+  height: auto;
 }
 
 .page .side .side_menu .menu_item.active {
@@ -188,6 +189,7 @@ img {
   -webkit-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
   -o-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
   transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
+  height: 0;
 }
 
 .grid_box {
@@ -658,4 +660,9 @@ body {
 .aui a:hover {
   text-decoration: none !important;
   color: inherit !important;
+}
+
+.aui .nav-item-label,
+.aui .user-full-nam {
+  color: #ffffff;
 }

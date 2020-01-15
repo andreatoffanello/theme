@@ -83,6 +83,7 @@
 					opacity: 1;
 					transition: .1s $ease;
 					transition-delay: .3s;
+					height: auto;
 				}
 
 				&.active {
@@ -128,6 +129,7 @@
 					span {
 						opacity: 0;
 						transition: .3s $ease;
+						height: 0;
 					}
 				}
 			}
