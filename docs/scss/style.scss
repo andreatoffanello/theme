@@ -50,7 +50,8 @@ body {
 		color: inherit !important;
 
 		&:hover {
-			text-text-decoration: none;
+			text-text-decoration: none!important;
+			color:inherit !important;
 		}
 	}
 }
