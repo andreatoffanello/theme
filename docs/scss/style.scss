@@ -29,6 +29,10 @@ body {
 
 .aui {
 
+	body, body #wrapper {
+		font-family: $font;
+	}
+
 	.navbar .nav li a {
 		color: #ffffff;
 	}
@@ -40,5 +44,13 @@ body {
 	.navbar .nav li.lfr-nav-item {
 		float: none;
 		display: block;
+	}
+
+	a {
+		color: inherit;
+
+		&:hover {
+			text-text-decoration: none;
+		}
 	}
 }

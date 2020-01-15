@@ -131,7 +131,6 @@ img {
   padding-top: 8px;
   padding-bottom: 8px;
   position: relative;
-  height: 16px;
 }
 
 .page .side .side_menu .menu_item i, .page .side .side_menu .menu_item span {
@@ -635,6 +634,10 @@ body {
   position: absolute;
 }
 
+.aui body, .aui body #wrapper {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
 .aui .navbar .nav li a {
   color: #ffffff;
 }
@@ -646,4 +649,12 @@ body {
 .aui .navbar .nav li.lfr-nav-item {
   float: none;
   display: block;
+}
+
+.aui a {
+  color: inherit;
+}
+
+.aui a:hover {
+  text-text-decoration: none;
 }
