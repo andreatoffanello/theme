@@ -1,5 +1,5 @@
 .sh {
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .link {
@@ -8,9 +8,9 @@
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: auto auto;
-	grid-gap: 8px;
+	grid-gap: .8rem;
 }
 
 
 
-$ease: cubic-bezier(.5, 0, .3, 1); 
+$ease: cubic-bezier(.5, 0, .3, 1);

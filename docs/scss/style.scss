@@ -4,6 +4,7 @@
 @import "helpers";
 
 @import "layout/grid";
+@import "layout/page";
 
 @import "navigation/navigation";
 @import "navigation/side";
@@ -15,6 +16,8 @@
 
 @import "elements/cards";
 @import "elements/buttons";
+@import "elements/popups";
+
 
 body {
 	background: $light;

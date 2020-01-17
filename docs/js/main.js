@@ -7,7 +7,9 @@ $(document).ready( function() {
 	});
 
 	$(".menu_trigger").click( function() {
-		$(".side_menu").toggleClass("hidden");
+		$(".side_menu").toggleClass("th_hide");
+
+
 	});
 
 // tabs
@@ -17,13 +19,13 @@ $(document).ready( function() {
 		var tabActiveData = $('.tabs').find(".active").data("tab");
 
 		$(".tab_content").each(function () {
-	            
+
 	        if($(this).data("tab") == tabActiveData) {
-	            
+
 	            $(".tab_content").hide();
-	            
+
 	            $(this).show();
-	            
+
 	            return;
 	        }
 	    });
@@ -32,8 +34,8 @@ $(document).ready( function() {
 
 	activeCheck();
 
-	
-	
+
+
 	$(".tab").click( function() {
 
 		$(".tab.active").removeClass("active");
@@ -53,11 +55,11 @@ $(document).ready( function() {
 		var tabClose = $(this).parent().data("tab");
 
 		$(".tab_content").each(function () {
-            
+
 	        if($(this).data("tab") == tabClose) {
-	            
+
 	            $(this).remove();
-	            
+
 	            return;
 	        }
 	    });
@@ -65,16 +67,16 @@ $(document).ready( function() {
 	    var activeNumber = $('.tab.active').length;
 
 	    if( activeNumber <= 0) {
-	    
+
 	    	$('.tab:nth-child(1)').addClass("active");
 
 	    }
 
-	    
+
 	    var tabsNumber = $('.tab').length;
 
 	    if( tabsNumber <= 1) {
-	    
+
 	    	$('.tab').addClass("active");
 
 	    }
@@ -86,8 +88,5 @@ $(document).ready( function() {
 
 // popup
 
-	$("[data-tab-close]").draggable({
-
-	});
 
 });
