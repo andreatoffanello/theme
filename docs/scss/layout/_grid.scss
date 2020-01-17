@@ -83,7 +83,8 @@
 					opacity: 1;
 					transition: .1s $ease;
 					transition-delay: .3s;
-					height: auto;
+					height: 100%;
+					overflow: hidden;
 				}
 
 				&.active {
