@@ -45,6 +45,10 @@ img {
           box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+i {
+  font-weight: 300 !important;
+}
+
 .link {
   color: #033E8C;
   -webkit-box-align: center;
@@ -368,15 +372,16 @@ i[data-tab-close]:hover:after {
 .th_nav .nav_left .brand, .th_nav .nav_left i {
   color: white;
   text-transform: uppercase;
-  font-weight: 600;
 }
 
 .th_nav .nav_left .brand {
   font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .th_nav .nav_left i {
   font-size: 2.4rem;
+  font-weight: 300;
 }
 
 .th_nav .nav_center h1 {
@@ -663,7 +668,7 @@ body {
 }
 
 .aui body, .aui body #wrapper {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif !important;
 }
 
 .aui .navbar .nav li a {
@@ -694,8 +699,5 @@ body {
 }
 
 .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls {
-  background: transparent;
-  position: fixed;
-  top: 60%;
-  z-index: 350;
+  top: 60% !important;
 }

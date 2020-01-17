@@ -33,7 +33,7 @@ body {
 .aui {
 
 	body, body #wrapper {
-		font-family: $font;
+		font-family: $font !important;
 	}
 
 	.navbar .nav li a {
@@ -64,9 +64,6 @@ body {
 	}
 
 	.dockbar-split .dockbar .navbar-inner .nav-add-controls{
-	    background: transparent;
-	    position: fixed;
-	    top: 60%;
-	    z-index: 350;
+	    top: 60% !important;
 	}
 }
