@@ -7,8 +7,8 @@ $(document).ready( function() {
 	});
 
 	$(".menu_trigger").click( function() {
-		$(".side_menu").toggleClass("th_hide");
 
+		$(".side_menu").toggleClass("th_hide");
 
 	});
 
@@ -83,10 +83,6 @@ $(document).ready( function() {
 
 	    activeCheck();
 	});
-
-
-
-// popup
 
 
 });

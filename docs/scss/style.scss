@@ -62,4 +62,11 @@ body {
 	.user-full-nam {
 		color: #ffffff;
 	}
+
+	.dockbar-split .dockbar .navbar-inner .nav-add-controls{
+	    background: transparent;
+	    position: fixed;
+	    top: 60%;
+	    z-index: 350;
+	}
 }

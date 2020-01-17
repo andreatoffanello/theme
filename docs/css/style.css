@@ -338,9 +338,9 @@ i[data-tab-close]:hover:after {
 .page {
   display: grid;
   grid-template-columns: auto 1fr;
-  grid-template-rows: calc(100vh - 8rem);
+  grid-template-rows: calc(100vh - 12rem);
   grid-gap: 1.6rem;
-  margin: 1.6rem;
+  margin: 3.2rem 1.6rem;
 }
 
 .th_nav {
@@ -691,4 +691,11 @@ body {
 .aui .nav-item-label,
 .aui .user-full-nam {
   color: #ffffff;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls {
+  background: transparent;
+  position: fixed;
+  top: 60%;
+  z-index: 350;
 }
