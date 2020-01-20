@@ -702,6 +702,10 @@ body {
   top: 60% !important;
 }
 
+.aui .dropdown-menu .nav-item-label {
+  color: #333333 !important;
+}
+
 .aui .dockbar-split .dockbar .navbar-inner .nav > li > a {
   background-color: #033e8c;
   height: 2rem;
