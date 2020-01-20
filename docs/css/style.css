@@ -701,3 +701,12 @@ body {
 .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls {
   top: 60% !important;
 }
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li > a {
+  background-color: #033e8c;
+  height: 2rem;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {
+  background-color: #033e8c;
+}
