@@ -699,7 +699,7 @@ body {
 }
 
 .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls {
-  top: 60% !important;
+  top: 75% !important;
 }
 
 .aui .dropdown-menu .nav-item-label {
@@ -708,10 +708,39 @@ body {
 
 .aui .dockbar-split .dockbar .navbar-inner .nav > li > a {
   background-color: #033e8c;
-  height: 2rem;
 }
 
 .aui .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {
   background-color: #033e8c !important;
   color: #ffffff !important;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a:hover {
+  background-color: #fff;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a {
+  background-color: #fff;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav > li {
+  background-color: #fff;
+}
+
+.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a.toggle-controls-link {
+  background-color: #D3D3D3;
+}
+
+.aui .dockbar-split.controls-hidden .dockbar .navbar-inner .nav-add-controls > li.toggle-controls > .toggle-controls-link {
+  background: #6AC1F3;
+}
+
+.aui .dockbar .user-avatar img {
+  width: 23px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.dockbar-user-notifications .dropdown-toggle .user-notifications-count {
+  background-color: #fff;
 }
