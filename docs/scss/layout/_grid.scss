@@ -45,13 +45,8 @@
 
 
 .grid_box {
-
 	background: $white;
-
-	.portlet_wrap {
-		height: 100%;
-		overflow-y: auto;
-	}
+	overflow: auto;
 
 	.box_head {
 		display: grid;

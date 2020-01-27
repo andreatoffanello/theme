@@ -108,11 +108,7 @@ i {
 
 .grid_box {
   background: #ffffff;
-}
-
-.grid_box .portlet_wrap {
-  height: 100%;
-  overflow-y: auto;
+  overflow: auto;
 }
 
 .grid_box .box_head {
@@ -569,29 +565,38 @@ i[data-tab-close]:hover:after {
 
 .button {
   display: inline-grid;
-  grid-template-columns: 1fr auto;
-  grid-gap: 1.6rem;
+  grid-template-columns: 1fr;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   grid-template-areas: "label icon";
   border: 0.2rem solid #033E8C;
-  padding: .4rem 1.6rem;
+  padding: .8rem 2.4rem;
   background: #033E8C;
-  color: #ffffff;
-  font-size: 1rem;
   -webkit-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  border-radius: 2.4rem;
+}
+
+.button.icon {
+  grid-template-columns: 1fr auto;
+  grid-gap: .8rem;
+}
+
+.button.only_icon, .button.only_icon.alt, .button.only_icon.secondary {
+  padding: .8rem;
+}
+
+.button * {
+  color: #ffffff;
+  font-size: 1.6rem;
 }
 
 .button span {
   grid-area: label;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: .9rem;
 }
 
 .button i {
@@ -600,10 +605,65 @@ i[data-tab-close]:hover:after {
 
 .button:hover {
   background: #ffffff;
-  color: #033E8C;
   -webkit-transition: .3s ease-in-out;
   -o-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
+}
+
+.button:hover * {
+  color: #033E8C;
+}
+
+.button.alt {
+  border: 0.2rem solid #033E8C;
+  padding: .8rem 2.4rem;
+  background: #ffffff;
+}
+
+.button.alt * {
+  color: #033E8C;
+}
+
+.button.alt:hover {
+  background: #033E8C;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.button.alt:hover * {
+  color: #ffffff;
+}
+
+.button.secondary {
+  border: 0.2rem solid #7898C9;
+  padding: .8rem 2.4rem;
+  background: #7898C9;
+}
+
+.button.secondary * {
+  color: #ffffff;
+}
+
+.button.secondary:hover {
+  background: #ffffff;
+  -webkit-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.button.secondary:hover * {
+  color: #7898C9;
+}
+
+.button.disabled {
+  cursor: unset;
+  background: #b2b2b2;
+  border-color: #b2b2b2;
+}
+
+.button.disabled:hover * {
+  color: #ffffff;
 }
 
 .popups {
@@ -656,6 +716,72 @@ i[data-tab-close]:hover:after {
 
 .popup .popup_content h3 {
   margin-bottom: 1.6rem;
+}
+
+.search_form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.search_form input {
+  border: none;
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.portlet_wrap {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.portlet {
+  max-width: 100%;
+  padding: 1.6rem;
+}
+
+.status_head {
+  display: grid;
+  grid-template-columns: 3.2rem repeat(6, 1fr) 3.2rem;
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+  grid-gap: .8rem;
+}
+
+.status_head .head_item {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-color: #353535;
+}
+
+.status_head .status_bar {
+  height: .4rem;
+  width: 100%;
+  margin-top: .8rem;
+}
+
+.status_head .status_bar.advance {
+  background: #D64444;
+}
+
+.status_head .status_bar.ontime {
+  background: #B0C4DE;
+}
+
+.status_head .status_bar.late {
+  background: #1E992A;
+}
+
+.status_head .status_bar.offpath {
+  background: #FFD700;
+}
+
+.status_head .status_bar.deadrun {
+  background: #BD6CC1;
+}
+
+.status_head .status_bar.virtual {
+  background: #20FFFF;
 }
 
 body {
