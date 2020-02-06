@@ -163,3 +163,15 @@ body {
 .aui .navbar .nav li.dropdown.open > .dropdown-toggle, .aui .navbar .nav li.dropdown.active > .dropdown-toggle, .aui .navbar .nav li.dropdown.open.active > .dropdown-toggle {
     background-color: inherit !important;
 }
+
+
+.portlet {
+
+	header {
+		display: none;
+	}
+}
+
+.portlet-content {
+	padding: 0;
+}
