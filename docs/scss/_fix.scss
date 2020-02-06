@@ -179,9 +179,9 @@
     input[type="tel"],
     input[type="color"],
     .uneditable-input {
-        background-color: $white;
-        border: 0;
-        box-shadow: none;
-        transition: none;
+        background-color: $white !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        transition: none !important;
     }
 }
