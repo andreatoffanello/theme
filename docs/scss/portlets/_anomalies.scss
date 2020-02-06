@@ -4,6 +4,14 @@
     grid-template-columns: 1fr;
     height: 100%;
 
+    .portlet_content {
+
+        .grid {
+            height: 100%;
+            grid-template-rows: 1fr 1fr;
+        }
+    }
+
     .search_form {
         max-width: 32rem;
         margin-bottom: 3.2rem;
