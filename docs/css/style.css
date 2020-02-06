@@ -1038,11 +1038,6 @@ tbody tr:nth-child(even) {
   background: #20FFFF;
 }
 
-body {
-  background: #fafafa;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
 .portlet-dockbar {
   position: absolute;
 }
@@ -1121,7 +1116,7 @@ body {
   border: 3px solid #fff;
 }
 
-.dockbar-user-notifications .dropdown-toggle .user-notifications-count {
+.aui .dockbar-user-notifications .dropdown-toggle .user-notifications-count {
   background-color: #fff;
 }
 
@@ -1155,7 +1150,7 @@ body {
   border: 3px solid #fff;
 }
 
-.dockbar-user-notifications .dropdown-toggle .user-notifications-count {
+.aui .dockbar-user-notifications .dropdown-toggle .user-notifications-count {
   background-color: #fff;
 }
 
@@ -1178,23 +1173,42 @@ body {
   background-color: #033E8C;
 }
 
-.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"], .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"], .aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class*=" icon-"] {
+.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"],
+.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"],
+.aui .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class*=" icon-"] {
   vertical-align: inherit;
 }
 
-.aui .navbar .nav li.dropdown.open > .dropdown-toggle, .aui .navbar .nav li.dropdown.active > .dropdown-toggle, .aui .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+.aui .navbar .nav li.dropdown.open > .dropdown-toggle,
+.aui .navbar .nav li.dropdown.active > .dropdown-toggle,
+.aui .navbar .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: inherit !important;
 }
 
-.portlet header {
+.aui .portlet header {
   display: none;
 }
 
-.portlet-content {
+.aui .portlet-content {
   padding: 0;
 }
 
-.aui textarea, .aui input[type="text"], .aui input[type="password"], .aui input[type="datetime"], .aui input[type="datetime-local"], .aui input[type="date"], .aui input[type="month"], .aui input[type="time"], .aui input[type="week"], .aui input[type="number"], .aui input[type="email"], .aui input[type="url"], .aui input[type="search"], .aui input[type="tel"], .aui input[type="color"], .aui .uneditable-input {
+.aui textarea,
+.aui input[type="text"],
+.aui input[type="password"],
+.aui input[type="datetime"],
+.aui input[type="datetime-local"],
+.aui input[type="date"],
+.aui input[type="month"],
+.aui input[type="time"],
+.aui input[type="week"],
+.aui input[type="number"],
+.aui input[type="email"],
+.aui input[type="url"],
+.aui input[type="search"],
+.aui input[type="tel"],
+.aui input[type="color"],
+.aui .uneditable-input {
   background-color: #ffffff;
   border: 0;
   -webkit-box-shadow: none;
@@ -1202,4 +1216,9 @@ body {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
+}
+
+body {
+  background: #fafafa;
+  font-family: "Source Sans Pro", sans-serif;
 }
