@@ -200,8 +200,9 @@
         display: none!important;
     }
 
-    .portlet-dropzone.portlet-column-content.portlet-column-content-first,
+    .portlet-column-content,
     .portlet-boundary,
+    .portlet-content,
     .portlet-content-container,
     .portlet-body {
         height: 100%!important;

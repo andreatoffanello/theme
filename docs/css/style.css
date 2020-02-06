@@ -1245,8 +1245,9 @@ tbody tr:nth-child(even) {
   display: none !important;
 }
 
-.aui .portlet-dropzone.portlet-column-content.portlet-column-content-first,
+.aui .portlet-column-content,
 .aui .portlet-boundary,
+.aui .portlet-content,
 .aui .portlet-content-container,
 .aui .portlet-body {
   height: 100% !important;
