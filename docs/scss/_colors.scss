@@ -14,11 +14,14 @@ $light: #fafafa;
 
 $white: #ffffff;
 
+$table_odd: rgba(120, 152, 201, 0.08);
+
+
+
 
 @mixin graygradient{
     background: linear-gradient(0deg, rgba(178,178,178, .5) 0%, rgba(178,178,178, 0) 100%); /* W3C */
 }
-
 
 
 $advance: #D64444;

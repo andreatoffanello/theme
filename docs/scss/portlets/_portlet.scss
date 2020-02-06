@@ -6,4 +6,10 @@
 .portlet {
     max-width: 100%;
     padding: 1.6rem;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.portlet_head {
+    margin-bottom: 1.6rem;
 }

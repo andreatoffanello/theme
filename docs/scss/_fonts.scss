@@ -2,10 +2,6 @@
 
 $font: 'Source Sans Pro', sans-serif;
 
-body {
-	color: $dark;
-
-}
 
 :root{
 	font-size: 10px!important;
@@ -13,3 +9,12 @@ body {
 
 
 $regular: 1.6rem;
+
+$small: 1.2rem;
+
+
+body {
+	color: $dark;
+	font-size: $regular;
+	font-family: $font;
+}

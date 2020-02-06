@@ -1,0 +1,45 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+thead {
+    padding: .8rem 0;
+    height: 3.2rem;
+    position: relative;
+
+    th {
+        border-bottom: .1rem solid $main;
+        text-align: left;
+    }
+
+}
+
+tr {
+    height: 3.2rem;
+}
+
+tbody {
+    display: block;
+    overflow: auto;
+    table-layout: fixed;
+    max-height: 100%;
+
+    tr {
+        height: 3.2rem;
+
+        &:nth-child(odd) {
+            background: $table_odd;
+        }
+
+        &:nth-child(even) {
+            background: $white;
+        }
+    }
+}

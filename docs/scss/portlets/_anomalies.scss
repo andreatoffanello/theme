@@ -1,0 +1,44 @@
+#anomalies {
+
+    .search_form {
+        max-width: 32rem;
+        margin-bottom: 3.2rem;
+    }
+
+    table {
+        margin-top: 1.6rem;
+        margin-bottom: 3.2rem;
+    }
+
+    tbody {
+
+        height: 38.4rem;
+
+    }
+
+    tr {
+        &.advance {
+            background: $advance;
+        }
+
+        &.ontime {
+            background: $ontime;
+        }
+
+        &.late {
+            background: $late;
+        }
+
+        &.offpath {
+            background: $offpath;
+        }
+
+        &.deadrun {
+            background: $deadrun;
+        }
+
+        &.virtual {
+            background: $virtual;
+        }
+    }
+}

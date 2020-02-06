@@ -2,17 +2,6 @@
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);
 	grid-gap: 1.6rem;
-
-	div {
-		height: auto;
-		background: $main;
-		text-align: center;
-		opacity:.5;
-
-		span {
-			color: $white;
-		}
-	}
 }
 
 .col-1 {
@@ -41,6 +30,10 @@
 
 .col-7 {
 	grid-column: span 7;
+}
+
+.col-full {
+	grid-column: span 8;
 }
 
 
