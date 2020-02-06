@@ -1243,7 +1243,8 @@ tbody tr:nth-child(even) {
   display: inline-block !important;
   height: auto !important;
   padding: 0 !important;
-  margin-bottom: none !important;
+  padding-left: 1.6rem !important;
+  margin-bottom: 0 !important;
   font-size: 1.6rem !important;
   line-height: 1 !important;
   color: #353535 !important;

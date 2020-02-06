@@ -203,14 +203,15 @@
         display: inline-block !important;
         height: auto !important;
         padding: 0 !important;
-        margin-bottom: none !important;
+        padding-left: 1.6rem !important;
+        margin-bottom: 0 !important;
         font-size: $regular !important;
         line-height: 1 !important;
         color: $dark!important;
         border-radius: none !important;
         vertical-align: middle !important;
     }
-    
+
 
     footer {
         display: none!important;
