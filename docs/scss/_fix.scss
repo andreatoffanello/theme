@@ -199,4 +199,11 @@
     footer {
         display: none!important;
     }
+
+    .portlet-dropzone.portlet-column-content.portlet-column-content-first,
+    .portlet-boundary,
+    .portlet-content-container,
+    .portlet-body {
+        height: 100%!important;
+    }
 }

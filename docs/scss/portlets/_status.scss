@@ -1,5 +1,9 @@
 #status {
 
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 1fr;
+
     .status_head {
         display: grid;
         grid-template-columns: 4rem repeat(6, 1fr) 4rem;

@@ -891,6 +891,12 @@ tbody tr:nth-child(even) {
   margin-bottom: 1.6rem;
 }
 
+#status {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
+}
+
 #status .status_head {
   display: grid;
   grid-template-columns: 4rem repeat(6, 1fr) 4rem;
@@ -1237,6 +1243,13 @@ tbody tr:nth-child(even) {
 
 .aui footer {
   display: none !important;
+}
+
+.aui .portlet-dropzone.portlet-column-content.portlet-column-content-first,
+.aui .portlet-boundary,
+.aui .portlet-content-container,
+.aui .portlet-body {
+  height: 100% !important;
 }
 
 body {
