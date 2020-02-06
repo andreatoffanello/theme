@@ -1007,6 +1007,13 @@ tbody tr:nth-child(even) {
   background: #20FFFF;
 }
 
+#anomalies {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
 #anomalies .search_form {
   max-width: 32rem;
   margin-bottom: 3.2rem;
@@ -1204,6 +1211,14 @@ tbody tr:nth-child(even) {
   padding: 0;
 }
 
+.aui .portlet-column-content,
+.aui .portlet-boundary,
+.aui .portlet-content,
+.aui .portlet-content-container,
+.aui .portlet-body {
+  height: 100% !important;
+}
+
 .aui select,
 .aui textarea,
 .aui input[type="text"],
@@ -1243,14 +1258,6 @@ tbody tr:nth-child(even) {
 
 .aui footer {
   display: none !important;
-}
-
-.aui .portlet-column-content,
-.aui .portlet-boundary,
-.aui .portlet-content,
-.aui .portlet-content-container,
-.aui .portlet-body {
-  height: 100% !important;
 }
 
 body {

@@ -161,6 +161,14 @@
     	padding: 0;
     }
 
+    .portlet-column-content,
+    .portlet-boundary,
+    .portlet-content,
+    .portlet-content-container,
+    .portlet-body {
+        height: 100%!important;
+    }
+
     select,
     textarea,
     input[type="text"],
@@ -195,16 +203,8 @@
         vertical-align: middle !important;
     }
 
-
     footer {
         display: none!important;
     }
 
-    .portlet-column-content,
-    .portlet-boundary,
-    .portlet-content,
-    .portlet-content-container,
-    .portlet-body {
-        height: 100%!important;
-    }
 }
