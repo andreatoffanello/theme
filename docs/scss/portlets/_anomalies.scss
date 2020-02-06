@@ -6,10 +6,10 @@
 
     .portlet_content {
         height: 100%;
-        
+
         .grid {
             height: 100%;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 50% 50%;
         }
     }
 
@@ -24,7 +24,9 @@
     }
 
     tbody {
-        height: 38.4rem;
+        height: 32rem;
+        max-height: 100%;
+        overflow: auto;
     }
 
     tr {

@@ -1020,7 +1020,7 @@ tbody tr:nth-child(even) {
 
 #anomalies .portlet_content .grid {
   height: 100%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 50% 50%;
 }
 
 #anomalies .search_form {
@@ -1034,7 +1034,9 @@ tbody tr:nth-child(even) {
 }
 
 #anomalies tbody {
-  height: 38.4rem;
+  height: 32rem;
+  max-height: 100%;
+  overflow: auto;
 }
 
 #anomalies tr.advance {
