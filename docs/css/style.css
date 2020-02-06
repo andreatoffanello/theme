@@ -895,6 +895,7 @@ tbody tr:nth-child(even) {
   display: grid;
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr;
+  height: 100%;
 }
 
 #status .status_head {
