@@ -127,11 +127,11 @@
     }
 
     .dockbar-split .dockbar .navbar-inner .nav > li > a {
-        height: 2rem;
+        height: auto;
     }
 
     .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a {
-        background-color: #033E8C;
+        background-color: #033E8C !important;
     }
 
     .dockbar-split .dockbar .navbar-inner .nav-add-controls > li > a [class^="icon-"],
