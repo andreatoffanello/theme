@@ -1222,6 +1222,10 @@ tbody tr:nth-child(even) {
   transition: none !important;
 }
 
+.aui footer {
+  display: none !important;
+}
+
 body {
   background: #fafafa;
   font-family: "Source Sans Pro", sans-serif;

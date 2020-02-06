@@ -157,8 +157,6 @@
         }
     }
 
-
-
     .portlet-content {
     	padding: 0;
     }
@@ -183,5 +181,9 @@
         border: 0 !important;
         box-shadow: none !important;
         transition: none !important;
+    }
+
+    footer {
+        display: none!important;
     }
 }
