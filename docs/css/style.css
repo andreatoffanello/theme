@@ -944,8 +944,7 @@ tbody tr:nth-child(even) {
 }
 
 #status .lines {
-  height: calc(100% - 12rem);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #status .status_line {

@@ -3,7 +3,7 @@
     grid-template-rows: auto auto 1fr;
     grid-template-columns: 1fr;
     height: 100%;
-    
+
 
     .status_head {
         display: grid;
@@ -51,8 +51,8 @@
     }
 
     .lines {
-        height: calc(100% - 12rem);
-        overflow-y: scroll;
+        // height: calc(100% - 12rem);
+        overflow-y: auto;
     }
 
     .status_line {
