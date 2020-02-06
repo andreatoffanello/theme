@@ -1198,6 +1198,7 @@ tbody tr:nth-child(even) {
   padding: 0;
 }
 
+.aui select,
 .aui textarea,
 .aui input[type="text"],
 .aui input[type="password"],
@@ -1221,29 +1222,11 @@ tbody tr:nth-child(even) {
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
-}
-
-.aui select,
-.aui textarea,
-.aui input[type="text"],
-.aui input[type="password"],
-.aui input[type="datetime"],
-.aui input[type="datetime-local"],
-.aui input[type="date"],
-.aui input[type="month"],
-.aui input[type="time"],
-.aui input[type="week"],
-.aui input[type="number"],
-.aui input[type="email"],
-.aui input[type="url"],
-.aui input[type="search"],
-.aui input[type="tel"],
-.aui input[type="color"],
-.aui .uneditable-input {
   display: inline-block !important;
   height: auto !important;
   padding: 0 !important;
   padding-left: 1.6rem !important;
+  margin: 0 !important;
   margin-bottom: 0 !important;
   font-size: 1.6rem !important;
   line-height: 1 !important;
