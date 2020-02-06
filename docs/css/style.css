@@ -1014,6 +1014,10 @@ tbody tr:nth-child(even) {
   height: 100%;
 }
 
+#anomalies .portlet_content {
+  height: 100%;
+}
+
 #anomalies .portlet_content .grid {
   height: 100%;
   grid-template-rows: 1fr 1fr;
