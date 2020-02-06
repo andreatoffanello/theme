@@ -1240,15 +1240,15 @@ tbody tr:nth-child(even) {
 .aui input[type="tel"],
 .aui input[type="color"],
 .aui .uneditable-input {
-  display: inline-block;
-  height: auto;
-  padding: 4px 6px;
+  display: inline-block !important;
+  height: auto !important;
+  padding: 0 !important;
   margin-bottom: none !important;
   font-size: 1.6rem !important;
   line-height: 1 !important;
   color: #353535 !important;
   border-radius: none !important;
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 .aui footer {
