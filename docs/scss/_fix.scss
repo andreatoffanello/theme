@@ -183,6 +183,34 @@
         transition: none !important;
     }
 
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="color"],
+    .uneditable-input {
+        display: inline-block;
+        height: auto;
+        padding: 4px 6px;
+        margin-bottom: none !important;
+        font-size: $regular !important;
+        line-height: 1 !important;
+        color: $dark!important;
+        border-radius: none !important;
+        vertical-align: middle;
+    }
+
     footer {
         display: none!important;
     }

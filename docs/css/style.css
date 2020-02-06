@@ -718,7 +718,8 @@ i[data-tab-close]:hover:after {
   grid-template-columns: 1fr auto;
 }
 
-.search_form input {
+.search_form input,
+.search_form input[type="text"] {
   border: none;
   padding-left: 1.6rem;
   font-size: 1.6rem;
@@ -1220,6 +1221,34 @@ tbody tr:nth-child(even) {
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
+}
+
+.aui select,
+.aui textarea,
+.aui input[type="text"],
+.aui input[type="password"],
+.aui input[type="datetime"],
+.aui input[type="datetime-local"],
+.aui input[type="date"],
+.aui input[type="month"],
+.aui input[type="time"],
+.aui input[type="week"],
+.aui input[type="number"],
+.aui input[type="email"],
+.aui input[type="url"],
+.aui input[type="search"],
+.aui input[type="tel"],
+.aui input[type="color"],
+.aui .uneditable-input {
+  display: inline-block;
+  height: auto;
+  padding: 4px 6px;
+  margin-bottom: none !important;
+  font-size: 1.6rem !important;
+  line-height: 1 !important;
+  color: #353535 !important;
+  border-radius: none !important;
+  vertical-align: middle;
 }
 
 .aui footer {
