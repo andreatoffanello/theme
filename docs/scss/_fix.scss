@@ -45,7 +45,9 @@
 	}
 
     .dockbar-split .dockbar .navbar-inner .nav > li > a {
-    	background-color: #033e8c;
+    	background-color: $main;
+        line-height: 1!important;
+        padding: 1.6rem .8rem!important;
     }
 
     .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {
