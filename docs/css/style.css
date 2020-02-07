@@ -1063,6 +1063,147 @@ tbody tr:nth-child(even) {
   background: #20FFFF;
 }
 
+#dailytrains {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+#dailytrains .portlet_head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#dailytrains .portlet_head .search_form {
+  width: 48rem;
+  justify-self: end;
+}
+
+#dailytrains .portlet_content {
+  overflow: auto;
+}
+
+#dailytrains .signle_dtrain {
+  display: grid;
+  grid-template-columns: 4.8rem 1fr;
+  grid-template-rows: auto;
+  margin-bottom: 1.6rem;
+}
+
+#dailytrains .signle_dtrain .line_name {
+  place-self: center;
+  color: #ffffff;
+  font-weight: 600;
+  background: #e1e7ef;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+
+#dailytrains .signle_dtrain .line_name span {
+  place-self: center;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+#dailytrains .signle_dtrain .dtrain_track {
+  padding: 1.6rem;
+}
+
+#dailytrains .signle_dtrain .dtrain_box {
+  height: 14rem;
+  width: 14rem;
+  margin-right: .8rem;
+  background: #ffffff;
+  display: inline-grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr 3.2rem;
+  grid-template-areas: "tleft tright" "bcontent bcontent" "bb bb";
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+#dailytrains .signle_dtrain .dtrain_box .tb_left, #dailytrains .signle_dtrain .dtrain_box .tb_right, #dailytrains .signle_dtrain .dtrain_box .b_content, #dailytrains .signle_dtrain .dtrain_box .bb {
+  padding: .4rem;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .tb_left {
+  grid-area: tleft;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .tb_right {
+  grid-area: tright;
+  text-align: right;
+  align-self: center;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .b_content {
+  grid-area: bcontent;
+  text-align: center;
+  place-self: center;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .b_content h4 {
+  text-transform: uppercase;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .bb {
+  grid-area: bb;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+#dailytrains .signle_dtrain .dtrain_box .bb.advance {
+  background: #D64444;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .bb.ontime {
+  background: #B0C4DE;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .bb.late {
+  background: #1E992A;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .bb.offpath {
+  background: #FFD700;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .bb.deadrun {
+  background: #BD6CC1;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .bb.virtual {
+  background: #20FFFF;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .short {
+  display: block;
+}
+
+#dailytrains .signle_dtrain .dtrain_box .expand {
+  display: none;
+  font-size: .8rem;
+}
+
+#dailytrains .signle_dtrain .dtrain_box:hover {
+  -webkit-transform: scale(2);
+      -ms-transform: scale(2);
+          transform: scale(2);
+  z-index: 2;
+}
+
+#dailytrains .signle_dtrain .dtrain_box:hover .short {
+  display: none;
+}
+
+#dailytrains .signle_dtrain .dtrain_box:hover .expand {
+  display: block;
+}
+
 .portlet-dockbar {
   position: absolute;
 }

@@ -1,0 +1,138 @@
+#dailytrains {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+
+    .portlet_head {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+        .search_form {
+            width: 48rem;
+            justify-self: end;
+        }
+    }
+
+    .portlet_content {
+        overflow: auto;
+    }
+
+    .signle_dtrain {
+        display: grid;
+        grid-template-columns: 4.8rem 1fr;
+        grid-template-rows: auto;
+        margin-bottom: 1.6rem;
+
+        .line_name {
+            place-self: center;
+            color: $white;
+            font-weight: 600;
+            background: $main_light;
+            height: 100%;
+            width: 100%;
+            display: grid;
+
+            span {
+                place-self: center;
+                @include text_shadow;
+            }
+        }
+
+        .dtrain_track {
+            padding: 1.6rem;
+        }
+
+        .dtrain_box {
+            height: 14rem;
+            width: 14rem;
+            margin-right: .8rem;
+            background: $white;
+            display: inline-grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto 1fr 3.2rem;
+            grid-template-areas: "tleft tright"
+                                 "bcontent bcontent"
+                                 "bb bb";
+            transform: scale(1);
+
+            .tb_left, .tb_right, .b_content, .bb {
+                padding: .4rem;
+            }
+
+            .tb_left {
+                grid-area: tleft;
+            }
+
+            .tb_right {
+                grid-area: tright;
+                text-align: right;
+                align-self: center;
+            }
+
+            .b_content {
+                grid-area: bcontent;
+                text-align: center;
+                place-self: center;
+
+                h4 {
+                    text-transform: uppercase;
+                }
+            }
+
+            .bb{
+                grid-area: bb;
+                text-align: center;
+                font-weight: 600;
+                color: $white;
+                @include text_shadow;
+
+                &.advance {
+                    background: $advance;
+                }
+
+                &.ontime {
+                    background: $ontime;
+                }
+
+                &.late {
+                    background: $late;
+                }
+
+                &.offpath {
+                    background: $offpath;
+                }
+
+                &.deadrun {
+                    background: $deadrun;
+                }
+
+                &.virtual {
+                    background: $virtual;
+                }
+            }
+
+            .short {
+                display: block;
+            }
+
+            .expand {
+                display: none;
+                font-size: .8rem;
+            }
+
+            &:hover {
+                transform: scale(2);
+                z-index: 2;
+
+                .short {
+                    display: none;
+                }
+
+                .expand {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -18,3 +18,7 @@ i {
 
 
 $ease: cubic-bezier(.5, 0, .3, 1);
+
+@mixin text_shadow {
+	text-shadow: .2rem .2rem .2rem rgba(0,0,0, .2);
+}

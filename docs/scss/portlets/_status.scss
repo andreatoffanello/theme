@@ -80,7 +80,7 @@
                 text-align: center;
                 padding: .4rem;
                 color: $white;
-                text-shadow: .2rem .2rem .2rem rgba(0,0,0, .2);
+                @include text_shadow;
 
                 &.advance {
                     background: $advance;
