@@ -48,6 +48,10 @@
     	background-color: $main;
         line-height: 1!important;
         padding: 1.6rem .8rem!important;
+
+		&.user-avatar-link {
+			padding: 1.2rem .8rem!important;
+		}
     }
 
     .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {

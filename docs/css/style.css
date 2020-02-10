@@ -1253,6 +1253,10 @@ tbody tr:nth-child(even) {
   padding: 1.6rem 0.8rem !important;
 }
 
+.aui .dockbar-split .dockbar .navbar-inner .nav > li > a.user-avatar-link {
+  padding: 1.2rem 0.8rem !important;
+}
+
 .aui .dockbar-split .dockbar .navbar-inner .nav li.dropdown.open > .dropdown-toggle {
   background-color: #033e8c !important;
   color: #ffffff !important;
