@@ -1122,6 +1122,10 @@ tbody tr:nth-child(even) {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
+  position: relative;
+  -webkit-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
+  -o-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
+  transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
 }
 
 #dailytrains .signle_dtrain .dtrain_box .tb_left, #dailytrains .signle_dtrain .dtrain_box .tb_right, #dailytrains .signle_dtrain .dtrain_box .b_content, #dailytrains .signle_dtrain .dtrain_box .bb {
@@ -1194,6 +1198,10 @@ tbody tr:nth-child(even) {
       -ms-transform: scale(2);
           transform: scale(2);
   z-index: 2;
+  position: absolute;
+  -webkit-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
+  -o-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
+  transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
 }
 
 #dailytrains .signle_dtrain .dtrain_box:hover .short {
@@ -1210,6 +1218,16 @@ tbody tr:nth-child(even) {
 
 .aui body, .aui body #wrapper {
   font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 1.6rem !important;
+}
+
+.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6, .aui p {
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+.aui h3 {
+  font-size: 2.4rem !important;
 }
 
 .aui .navbar .nav li a {

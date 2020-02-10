@@ -55,6 +55,8 @@
                                  "bcontent bcontent"
                                  "bb bb";
             transform: scale(1);
+            position: relative;
+            transition: .3s $ease;
 
             .tb_left, .tb_right, .b_content, .bb {
                 padding: .4rem;
@@ -124,6 +126,8 @@
             &:hover {
                 transform: scale(2);
                 z-index: 2;
+                position: absolute;
+                transition: .3s $ease;
 
                 .short {
                     display: none;
