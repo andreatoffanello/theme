@@ -14,9 +14,12 @@
 
         .head_item {
             text-align: center;
-            font-size: $regular;
+            font-size: $small;
             font-weight: 600;
             font-color: $dark;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .status_bar {

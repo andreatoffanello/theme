@@ -908,9 +908,13 @@ tbody tr:nth-child(even) {
 
 #status .status_head .head_item {
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 600;
   font-color: #353535;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 #status .status_head .status_bar {
