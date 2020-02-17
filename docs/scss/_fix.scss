@@ -237,7 +237,7 @@
 
 		table.dataTable.no-footer {
 			margin: 0!important;
-			border-bottom: .1rem solid $main !important;
+			border-bottom: 0 !important;
 
 			thead {
 				padding: 0!important;
@@ -254,11 +254,11 @@
 		}
 
 		.dataTables_scrollBody {
-			height: calc((100% - (10px)) / 2);
+			height: auto !important;
 		}
 
 		.dataTables_scroll {
-
+			margin-bottom: 3.2rem;
 		}
 
 		.dataTables_filter {

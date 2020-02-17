@@ -1595,7 +1595,7 @@ tbody tr:nth-child(even) {
 
 .aui .anomaly table.dataTable.no-footer {
   margin: 0 !important;
-  border-bottom: 0.1rem solid #033E8C !important;
+  border-bottom: 0 !important;
 }
 
 .aui .anomaly table.dataTable.no-footer thead {
@@ -1612,7 +1612,11 @@ tbody tr:nth-child(even) {
 }
 
 .aui .anomaly .dataTables_scrollBody {
-  height: calc((100% - (10px)) / 2);
+  height: auto !important;
+}
+
+.aui .anomaly .dataTables_scroll {
+  margin-bottom: 3.2rem;
 }
 
 .aui .anomaly .dataTables_filter {
