@@ -1624,7 +1624,7 @@ tbody tr:nth-child(even) {
 }
 
 .aui .anomaly .dataTables_filter .search_form input {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 body {
