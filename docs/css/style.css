@@ -1631,6 +1631,11 @@ tbody tr:nth-child(even) {
   display: inline-block !important;
 }
 
+.aui .anomaly .table.dataTable tbody tr:nth-child(odd) {
+  background-color: rgba(120, 152, 201, 0.08);
+  border: 0 !important;
+}
+
 body {
   background: #fafafa;
   font-family: "Source Sans Pro", sans-serif;
