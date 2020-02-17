@@ -223,29 +223,34 @@
         display: none!important;
     }
 
+	.anomaly {
 
-	.dt_blockName {
-		position: relative!important;
-		top: 0!important;
-		width: auto!important;
-	}
+		.dt_blockName {
+			position: relative!important;
+			top: 0!important;
+			width: auto!important;
+		}
 
-	.group.dk-bus.expanded-group.group-item-expander {
-		display: none!important;
-	}
+		.group.dk-bus.expanded-group.group-item-expander {
+			display: none!important;
+		}
 
-	table.dataTable.no-footer {
-		margin: 0!important;
-		border-bottom: .1rem solid $main !important;
+		table.dataTable.no-footer {
+			margin: 0!important;
+			border-bottom: .1rem solid $main !important;
 
-		thead {
-			padding: 0!important;
+			thead {
+				padding: 0!important;
+			}
+		}
+
+		table.dataTable thead th,
+		table.dataTable thead td {
+			padding: 0;
+		}
+
+		.dataTables_wrapper .dataTables_filter {
+			float: none;
 		}
 	}
-
-	table.dataTable thead th,
-	table.dataTable thead td {
-		padding: 0;
-	}
-
 }
