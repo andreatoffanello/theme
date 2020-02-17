@@ -252,5 +252,28 @@
 		.dataTables_wrapper .dataTables_filter {
 			float: none;
 		}
+
+		.dataTables_scrollBody {
+			height: calc((100% - (10px)) / 2);
+		}
+
+		.dataTables_scroll {
+
+		}
+
+		.dataTables_filter {
+			height: auto!important;
+
+			input {
+				display: none !important;
+			}
+
+			.search_form {
+
+				input {
+					display: inline-block;
+				}
+			}
+		}
 	}
 }
