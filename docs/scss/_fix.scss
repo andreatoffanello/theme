@@ -231,7 +231,21 @@
 	}
 
 	.group.dk-bus.expanded-group.group-item-expander {
-		display: none;
+		display: none!important;
+	}
+
+	table.dataTable.no-footer {
+		margin: 0!important;
+		border-bottom: .1rem solid $main !important;
+
+		thead {
+			padding: 0!important;
+		}
+	}
+
+	table.dataTable thead th,
+	table.dataTable thead td {
+		padding: 0;
 	}
 
 }

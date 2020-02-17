@@ -1590,7 +1590,21 @@ tbody tr:nth-child(even) {
 }
 
 .aui .group.dk-bus.expanded-group.group-item-expander {
-  display: none;
+  display: none !important;
+}
+
+.aui table.dataTable.no-footer {
+  margin: 0 !important;
+  border-bottom: 0.1rem solid #033E8C !important;
+}
+
+.aui table.dataTable.no-footer thead {
+  padding: 0 !important;
+}
+
+.aui table.dataTable thead th,
+.aui table.dataTable thead td {
+  padding: 0;
 }
 
 body {
