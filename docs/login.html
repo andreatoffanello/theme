@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="https://andreatoffanello.github.io/thetis_icon_font/style.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+	<script type="text/javascript" src="https://cdn.datatables.net/colreorder/1.5.2/js/dataTables.colReorder.min.js"></script>
+
+
+
+	<script src="js/main.js" type="text/javascript"></script>
+</head>
+<body id="login" class="fl-theme-iphone">
+    <div class="flc-screenNavigator-view-container">
+        <div class="fl-screenNavigator-view">
+            <div id="header" class="flc-screenNavigator-navbar fl-navbar fl-table">
+                <i class="icon_thetis_logo" id="thetis_logo_nav"></i>
+                <span class="brand">SAEV</span>
+            </div>
+
+
+
+            <div id="content" class="fl-screenNavigator-scroll-container">
+
+				<div id="msg" class="errors">
+					<h2>Non-secure Connection</h2>
+					<p>You are currently accessing CAS over a non-secure connection. Single Sign On WILL NOT WORK. In order to have single sign on work, you MUST log in over HTTPS.</p>
+				</div>
+
+
+                <div class="content_wrapper">
+
+	                <!-- rimosso css inline -->
+
+
+
+	                <div class="box fl-panel" id="login_box">
+
+	                    <!-- icona dentro il login box -->
+	                    <i class="icon_thetis_logo" id="thetis_logo"></i>
+
+	                    <form id="fm1" class="fm-v clearfix" action="http://localhost:8080/cas-server-webapp/login?locale=it" method="post">
+
+
+	                        <!-- Benvenuti al Central Authentication Service (CAS). -->
+	                        <h2>
+								<!-- cambiato in solo login -->
+								Login
+							</h2>
+
+							<!-- rimosso css inline + spostato sotto titolo-->
+						   <div id="msg" class="errors">Login o password errate</div>
+
+	                        <!-- rimosso br -->
+
+	                        <div class="row fl-controls-left">
+
+	                            <!-- correzione label span-->
+
+	                            <label for="username" class="fl-label"><span class="accesskey">Username:</span></label>
+
+	                            <input id="username" name="username" class="required" tabindex="1" accesskey="L" type="text" value="prova" size="25" autocomplete="false" placeholder="Your Username">
+
+	                        </div>
+
+	                        <!-- rimosso br -->
+
+	                        <div class="row fl-controls-left">
+	                            <label for="password" class="fl-label"><span class="accesskey">Password:</span></label>
+
+
+	                            <input id="password" name="password" class="required" tabindex="2" accesskey="P" type="password" value="" size="25" autocomplete="off" placeholder="Your Password">
+	                        </div>
+	                        <div class="row check" id="row-check">
+	                            <input id="warn" name="warn" value="true" tabindex="3" accesskey="A" type="checkbox">
+	                            <label for="warn"><span class="accesskey">A</span>vvisami prima di autenticarmi su un altro sito</span>
+	                            </label>
+	                        </div>
+
+	                        <div class="row btn-row">
+	                            <input type="hidden" name="lt" value="LT-11-RHproX14RInj0GZgAQtYT0eCJ1kyxv">
+	                            <input type="hidden" name="execution" value="e1s2">
+	                            <input type="hidden" name="_eventId" value="submit">
+
+	                            <!-- aggiunto class icon  e span intorno al testo -->
+
+	                            <button class="btn-submit icon" name="submit" accesskey="l" tabindex="4" type="submit"><span>Login</span><i class="icon_login"></i></button>
+	                            <!-- rimosso annulla -->
+
+	                        </div>
+	                    </form>
+	                </div>
+	                <div id="sidebar">
+	                    <div class="sidebar-content">
+	                        <p class="fl-panel fl-note fl-bevel-white fl-font-size-80">
+	                            Per motivi di sicurezza dovresti effettuare il logout e chiudere tutte le finestre del browser quando hai finito di utilizzare servizi che necessitano autenticazione.
+	                        </p>
+	                        <div id="list-languages" class="fl-panel">
+
+	                            <h3>Languages:</h3>
+
+	                            <ul>
+	                                <li class="first"><a href="http://localhost:8080/cas-server-webapp/login?locale=en">English</a></li>
+	                                <li><a href="http://localhost:8080/cas-server-webapp/login?locale=es">Spanish</a></li>
+	                                <li><a href="http://localhost:8080/cas-server-webapp/login?locale=fr">French</a></li>
+	                                <li><a href="http://localhost:8080/cas-server-webapp/login?locale=it">Italiano</a></li>
+	                                <li class="last"><a href="http://localhost:8080/cas-server-webapp/login?locale=de">Deutsch</a></li>
+	                            </ul>
+
+
+	                        </div>
+	                    </div>
+	                </div>
+
+				</div>
+
+
+
+            </div>
+            <div id="footer" class="fl-panel fl-note fl-bevel-white fl-font-size-80">
+                <!--  	<a id="jasig" href="http://192.168.8.6" title="BACK to home page">BACK to homepage</a>-->
+                <div id="copyright"></div>
+            </div>
+        </div>
+    </div>
+    <!--         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+    <!--         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="./eBus Suite - Central Authentication Service_files/jquery.1.4.2.min.js.download"></script>
+    <script type="text/javascript" src="./eBus Suite - Central Authentication Service_files/jquery-ui.1.8.5.min.js.download"></script>
+    <script type="text/javascript" src="./eBus Suite - Central Authentication Service_files/cas.js.download"></script>
+
+
+
+
+</body>
+
+</html>
