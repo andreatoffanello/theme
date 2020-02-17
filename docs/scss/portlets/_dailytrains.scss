@@ -16,6 +16,7 @@
 
     .portlet_content {
         overflow: auto;
+        padding-top: 6.4rem;
     }
 
     .signle_dtrain {
@@ -127,7 +128,7 @@
             &:hover {
                 transform: scale(2);
                 z-index: 2;
-                position: absolute;
+                // position: absolute;
                 transition: .3s $ease;
 
                 .short {

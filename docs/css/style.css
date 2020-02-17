@@ -1087,6 +1087,7 @@ tbody tr:nth-child(even) {
 
 #dailytrains .portlet_content {
   overflow: auto;
+  padding-top: 6.4rem;
 }
 
 #dailytrains .signle_dtrain {
@@ -1204,7 +1205,6 @@ tbody tr:nth-child(even) {
       -ms-transform: scale(2);
           transform: scale(2);
   z-index: 2;
-  position: absolute;
   -webkit-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
   -o-transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
   transition: 0.3s cubic-bezier(0.5, 0, 0.3, 1);
