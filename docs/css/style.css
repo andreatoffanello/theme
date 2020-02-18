@@ -1632,7 +1632,7 @@ tbody tr:nth-child(even) {
 }
 
 .aui .anomaly .table.dataTable tbody tr:nth-child(odd) {
-  background-color: rgba(120, 152, 201, 0.08);
+  background-color: rgba(120, 152, 201, 0.08) !important;
   border: 0 !important;
 }
 
