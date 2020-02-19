@@ -62,18 +62,18 @@
 						<i class="icon_menu"></i>
 					</div>
 
-					<a class="menu_item" href="index.html"><i class="icon_home"></i><span>Welcome</span></a>
-					<a class="menu_item" href=""><i class="icon_linear_view"></i><span>Linear View</span></a>
-					<a class="menu_item" href=""><i class="icon_map"></i><span>Cartography</span></a>
-					<a class="menu_item" href=""><i class="icon_restart"></i><span>Simulator</span></a>
+					<a class="menu_item" href="home.html"><i class="icon_home"></i><span>Welcome</span></a>
+					<a class="menu_item" href="linearview.html"><i class="icon_linear_view"></i><span>Linear View</span></a>
+					<a class="menu_item" href="cartography.html"><i class="icon_map"></i><span>Cartography</span></a>
+					<a class="menu_item" href="simulator.html"><i class="icon_restart"></i><span>Simulator</span></a>
 					<a class="menu_item" href="dailytrains.html"><i class="icon_status"></i><span>Service Status</span></a>
 					<a class="menu_item active" href="anomalies.html"><i class="icon_error"></i><span>Anomalies</span></a>
-					<a class="menu_item" href=""><i class="icon_coincidence"></i><span>Coincidences</span></a>
-					<a class="menu_item" href=""><i class="icon_maintenance"></i><span>Diagnostique</span></a>
-					<a class="menu_item" href=""><i class="icon_deviation"></i><span>Deviations</span></a>
-					<a class="menu_item" href=""><i class="icon_stats"></i><span>Statistiques</span></a>
-					<a class="menu_item" href=""><i class="icon_planification"></i><span>Planification</span></a>
-					<a class="menu_item" href=""><i class="icon_match"></i><span>Prise de Service</span></a>
+					<a class="menu_item" href="coincidences.html"><i class="icon_coincidence"></i><span>Coincidences</span></a>
+					<a class="menu_item" href="maintenance.html"><i class="icon_maintenance"></i><span>Diagnostique</span></a>
+					<a class="menu_item" href="deviations.html"><i class="icon_deviation"></i><span>Deviations</span></a>
+					<a class="menu_item" href="statistiques.html"><i class="icon_stats"></i><span>Statistiques</span></a>
+					<a class="menu_item" href="planification.html"><i class="icon_planification"></i><span>Planification</span></a>
+					<a class="menu_item" href="shifts.html"><i class="icon_match"></i><span>Prise de Service</span></a>
 
 				</div>
 
@@ -1687,10 +1687,10 @@
 
 			var vehicles = $(this).data("vehicles");
 
-			var columns = 'repeat(' + vehicles + ', 1fr)';
+			var columns = '(100% / ' + vehicles + ')';
 
 			$(this).css({
-				'grid-template-columns': columns
+				'display': 'block'
 			});
 
 			$(this).children(".status_bar").each(function () {
@@ -1703,10 +1703,11 @@
 
 				} else {
 
-					var width = 'span ' + number;
+					var width = 'calc(' + columns + '*' + number + ')';
 
 					$(this).css({
-						'grid-column': width
+						'display': 'inline-block',
+						'width': width
 					});
 
 				}
